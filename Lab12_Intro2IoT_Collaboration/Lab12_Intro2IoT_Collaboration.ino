@@ -48,15 +48,15 @@ bool isButtonActivated() {
   bool state = digitalRead(buttonPin);
   
   Serial.print("Button: ");
-
+  Serial.println(digitalRead(buttonPin));
   // TODO: Fix this logic and print the correct status
   // Button is normally HIGH
   if (state == HIGH) {
     // Button not pressed
-    return true;
+    return false;
   } else {
     // Button pressed
-    return false;
+    return true;
   }
 
   // HINT: Serial.print should say "ON" or "OFF" too
