@@ -47,7 +47,7 @@ bool isRoomDark() {
 bool isButtonActivated() {
   bool state = digitalRead(buttonPin);
   
-  Serial.print("Button:2");
+  Serial.print("Button: ");
   Serial.println();
 
   // TODO: Fix this logic and print the correct status
